@@ -11,12 +11,17 @@ let tries = 10;
 let currWord;
 //The blanks where the letters will be;
 let blanks;  
+//Already guessed chars
+let used = [];
 
 //Game Functions
+
+//Picks a random word from the list and assigns it to the currWord variable.
 const randomizer = () => {
     currWord = WORDS[Math.floor(Math.random()*WORDS.length)].split('')
 };
 
+//Creates a series of blanks that is the same length as the currWord variable
 const setblanks = () => {
     let hold = [];
     currWord.map(i => {
@@ -25,7 +30,33 @@ const setblanks = () => {
     })
     blanks = hold.join("");
 };
+
+//Checks to see if the guessed letter is one of the mystery letters, and updates it if it is. If it is not one of the mystery letters it subtracts a try.
+const checker = guessed => {
+    if(!used.includes(guessed)){
+        if(currWord.includes(guessed)){
+            let hold = blanks.split('');
+            currWord.map((item, index) => {
+                if(item === guessed && guessed !== ' ') hold[index] = guessed;
+            })
+            blanks = hold.join('');
+            console.log(blanks)
+        }else{
+            tries--;
+            console.log(tries)
+        };
+        used.push(guessed);
+    }
+    console.log(guessed)
+
+};
+
 randomizer();
 setblanks();
 console.log(blanks,'\n',currWord.join(''));
+
+document.onkeyup = event => {
+    let guessed = event.key.toLowerCase();
+    checker(guessed);
+}; 
 
