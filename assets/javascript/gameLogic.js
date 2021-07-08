@@ -55,10 +55,21 @@ const checker = guessed => {
 const endGame = () => {
     if (tries <= 0) {
         alert("You have lost :( play again?")
+        reset();
     }
     if (!blanks.includes('*')) {
         alert("You have won :) play again?")
+        reset();
     }
+    
+};
+
+//Resets the game to play again
+const reset = () => {
+    randomizer();
+    setblanks();
+    used = [];
+    tries = 10;
 };
 
 randomizer();
