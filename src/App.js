@@ -6,8 +6,27 @@ import POKEMON from './assets/pokemon';
 const App = () => {
   let words = [...POKEMON];
 
-  let [tries,setTries] = useState(10)
-  
+  //State Hooks
+  let [tries, setTries] = useState(10);
+  let [pokemonWord, setPokemonWord] = useState();
+  let [blanks, setBlanks] = useState("");
+  let [used, setUsed] = useState([]);
+
+  const randomizer = () => {
+    let w = words[Math.floor(Math.random() * words.length)];
+    setPokemonWord(w);
+  };
+
+  const createBlanks = () => {
+    let holder = pokemonWord.name.map(i => {
+      if(i === ' ') return i
+      else return '*';
+    }).join('');
+
+    setBlanks(holder);
+  };
+
+
   return (
     <Container>
 
