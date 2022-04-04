@@ -1,1064 +1,1064 @@
 const POKEMON = [
     {
         '#': 1,
-        Name: 'Bulbasaur',
+        name: 'Bulbasaur',
         'Type 1': 'Grass',
         'Type 2': 'Poison',
         Japanese: 'フシギダネ'
     },
     {
         '#': 2,
-        Name: 'Ivysaur',
+        name: 'Ivysaur',
         'Type 1': 'Grass',
         'Type 2': 'Poison',
         Japanese: 'フシギソウ'
     },
     {
         '#': 3,
-        Name: 'Venusaur',
+        name: 'Venusaur',
         'Type 1': 'Grass',
         'Type 2': 'Poison',
         Japanese: 'フシギバナ'
     },
     {
         '#': 4,
-        Name: 'Charmander',
+        name: 'Charmander',
         'Type 1': 'Fire',
         'Type 2': 'N/A',
         Japanese: 'ヒトカゲ'
     },
     {
         '#': 5,
-        Name: 'Charmeleon',
+        name: 'Charmeleon',
         'Type 1': 'Fire',
         'Type 2': 'N/A',
         Japanese: 'リザード'
     },
     {
         '#': 6,
-        Name: 'Charizard',
+        name: 'Charizard',
         'Type 1': 'Fire',
         'Type 2': 'Flying',
         Japanese: 'リザードン'
     },
     {
         '#': 7,
-        Name: 'Squirtle',
+        name: 'Squirtle',
         'Type 1': 'Water',
         'Type 2': 'N/A',
         Japanese: 'ゼニガメ'
     },
     {
         '#': 8,
-        Name: 'Wartortle',
+        name: 'Wartortle',
         'Type 1': 'Water',
         'Type 2': 'N/A',
         Japanese: 'カメール'
     },
     {
         '#': 9,
-        Name: 'Blastoise',
+        name: 'Blastoise',
         'Type 1': 'Water',
         'Type 2': 'N/A',
         Japanese: 'カメックス'
     },
     {
         '#': 10,
-        Name: 'Caterpie',
+        name: 'Caterpie',
         'Type 1': 'Bug',
         'Type 2': 'N/A',
         Japanese: 'キャタピー'
     },
     {
         '#': 11,
-        Name: 'Metapod',
+        name: 'Metapod',
         'Type 1': 'Bug',
         'Type 2': 'N/A',
         Japanese: 'トランセル'
     },
     {
         '#': 12,
-        Name: 'Butterfree',
+        name: 'Butterfree',
         'Type 1': 'Bug',
         'Type 2': 'Flying',
         Japanese: 'バタフリー'
     },
     {
         '#': 13,
-        Name: 'Weedle',
+        name: 'Weedle',
         'Type 1': 'Bug',
         'Type 2': 'Poison',
         Japanese: 'ビードル'
     },
     {
         '#': 14,
-        Name: 'Kakuna',
+        name: 'Kakuna',
         'Type 1': 'Bug',
         'Type 2': 'Poison',
         Japanese: 'コクーン'
     },
     {
         '#': 15,
-        Name: 'Beedrill',
+        name: 'Beedrill',
         'Type 1': 'Bug',
         'Type 2': 'Poison',
         Japanese: 'スピアー'
     },
     {
         '#': 16,
-        Name: 'Pidgey',
+        name: 'Pidgey',
         'Type 1': 'Normal',
         'Type 2': 'Flying',
         Japanese: 'ポッポ'
     },
     {
         '#': 17,
-        Name: 'Pidgeotto',
+        name: 'Pidgeotto',
         'Type 1': 'Normal',
         'Type 2': 'Flying',
         Japanese: 'ピジョン'
     },
     {
         '#': 18,
-        Name: 'Pidgeot',
+        name: 'Pidgeot',
         'Type 1': 'Normal',
         'Type 2': 'Flying',
         Japanese: 'ピジョット'
     },
     {
         '#': 19,
-        Name: 'Rattata',
+        name: 'Rattata',
         'Type 1': 'Normal',
         'Type 2': 'N/A',
         Japanese: 'コラッタ'
     },
     {
         '#': 20,
-        Name: 'Raticate',
+        name: 'Raticate',
         'Type 1': 'Normal',
         'Type 2': 'N/A',
         Japanese: 'ラッタ'
     },
     {
         '#': 21,
-        Name: 'Spearow',
+        name: 'Spearow',
         'Type 1': 'Normal',
         'Type 2': 'Flying',
         Japanese: 'オニスズメ'
     },
     {
         '#': 22,
-        Name: 'Fearow',
+        name: 'Fearow',
         'Type 1': 'Normal',
         'Type 2': 'Flying',
         Japanese: 'オニドリル'
     },
     {
         '#': 23,
-        Name: 'Ekans',
+        name: 'Ekans',
         'Type 1': 'Poison',
         'Type 2': 'N/A',
         Japanese: 'アーボ'
     },
     {
         '#': 24,
-        Name: 'Arbok',
+        name: 'Arbok',
         'Type 1': 'Poison',
         'Type 2': 'N/A',
         Japanese: 'アーボック'
     },
     {
         '#': 25,
-        Name: 'Pikachu',
+        name: 'Pikachu',
         'Type 1': 'Electric',
         'Type 2': 'N/A',
         Japanese: 'ピカチュウ'
     },
     {
         '#': 26,
-        Name: 'Raichu',
+        name: 'Raichu',
         'Type 1': 'Electric',
         'Type 2': 'N/A',
         Japanese: 'ライチュウ'
     },
     {
         '#': 27,
-        Name: 'Sandshrew',
+        name: 'Sandshrew',
         'Type 1': 'Ground',
         'Type 2': 'N/A',
         Japanese: 'サンド'
     },
     {
         '#': 28,
-        Name: 'Sandslash',
+        name: 'Sandslash',
         'Type 1': 'Ground',
         'Type 2': 'N/A',
         Japanese: 'サンドパン'
     },
     {
         '#': 29,
-        Name: 'Nidoran♀',
+        name: 'Nidoran♀',
         'Type 1': 'Poison',
         'Type 2': 'N/A',
         Japanese: 'ニドラン♀'
     },
     {
         '#': 30,
-        Name: 'Nidorina',
+        name: 'Nidorina',
         'Type 1': 'Poison',
         'Type 2': 'N/A',
         Japanese: 'ニドリーナ'
     },
     {
         '#': 31,
-        Name: 'Nidoqueen',
+        name: 'Nidoqueen',
         'Type 1': 'Poison',
         'Type 2': 'Ground',
         Japanese: 'ニドクイン'
     },
     {
         '#': 32,
-        Name: 'Nidoran♂',
+        name: 'Nidoran♂',
         'Type 1': 'Poison',
         'Type 2': 'N/A',
         Japanese: 'ニドラン♂'
     },
     {
         '#': 33,
-        Name: 'Nidorino',
+        name: 'Nidorino',
         'Type 1': 'Poison',
         'Type 2': 'N/A',
         Japanese: 'ニドリーノ'
     },
     {
         '#': 34,
-        Name: 'Nidoking',
+        name: 'Nidoking',
         'Type 1': 'Poison',
         'Type 2': 'Ground',
         Japanese: 'ニドキング'
     },
     {
         '#': 35,
-        Name: 'Clefairy',
+        name: 'Clefairy',
         'Type 1': 'Fairy[1]',
         'Type 2': 'N/A',
         Japanese: 'ピッピ'
     },
     {
         '#': 36,
-        Name: 'Clefable',
+        name: 'Clefable',
         'Type 1': 'Fairy[2]',
         'Type 2': 'N/A',
         Japanese: 'ピクシー'
     },
     {
         '#': 37,
-        Name: 'Vulpix',
+        name: 'Vulpix',
         'Type 1': 'Fire',
         'Type 2': 'N/A',
         Japanese: 'ロコン'
     },
     {
         '#': 38,
-        Name: 'Ninetales',
+        name: 'Ninetales',
         'Type 1': 'Fire',
         'Type 2': 'N/A',
         Japanese: 'キュウコン'
     },
     {
         '#': 39,
-        Name: 'Jigglypuff',
+        name: 'Jigglypuff',
         'Type 1': 'Normal',
         'Type 2': 'Fairy',
         Japanese: 'プリン'
     },
     {
         '#': 40,
-        Name: 'Wigglytuff',
+        name: 'Wigglytuff',
         'Type 1': 'Normal',
         'Type 2': 'Fairy',
         Japanese: 'プクリン'
     },
     {
         '#': 41,
-        Name: 'Zubat',
+        name: 'Zubat',
         'Type 1': 'Poison',
         'Type 2': 'Flying',
         Japanese: 'ズバット'
     },
     {
         '#': 42,
-        Name: 'Golbat',
+        name: 'Golbat',
         'Type 1': 'Poison',
         'Type 2': 'Flying',
         Japanese: 'ゴルバット'
     },
     {
         '#': 43,
-        Name: 'Oddish',
+        name: 'Oddish',
         'Type 1': 'Grass',
         'Type 2': 'Poison',
         Japanese: 'ナゾノクサ'
     },
     {
         '#': 44,
-        Name: 'Gloom',
+        name: 'Gloom',
         'Type 1': 'Grass',
         'Type 2': 'Poison',
         Japanese: 'クサイハナ'
     },
     {
         '#': 45,
-        Name: 'Vileplume',
+        name: 'Vileplume',
         'Type 1': 'Grass',
         'Type 2': 'Poison',
         Japanese: 'ラフレシア'
     },
     {
         '#': 46,
-        Name: 'Paras',
+        name: 'Paras',
         'Type 1': 'Bug',
         'Type 2': 'Grass',
         Japanese: 'パラス'
     },
     {
         '#': 47,
-        Name: 'Parasect',
+        name: 'Parasect',
         'Type 1': 'Bug',
         'Type 2': 'Grass',
         Japanese: 'パラセクト'
     },
     {
         '#': 48,
-        Name: 'Venonat',
+        name: 'Venonat',
         'Type 1': 'Bug',
         'Type 2': 'Poison',
         Japanese: 'コンパン'
     },
     {
         '#': 49,
-        Name: 'Venomoth',
+        name: 'Venomoth',
         'Type 1': 'Bug',
         'Type 2': 'Poison',
         Japanese: 'モルフォン'
     },
     {
         '#': 50,
-        Name: 'Diglett',
+        name: 'Diglett',
         'Type 1': 'Ground',
         'Type 2': 'N/A',
         Japanese: 'ディグダ'
     },
     {
         '#': 51,
-        Name: 'Dugtrio',
+        name: 'Dugtrio',
         'Type 1': 'Ground',
         'Type 2': 'N/A',
         Japanese: 'ダグトリオ'
     },
     {
         '#': 52,
-        Name: 'Meowth',
+        name: 'Meowth',
         'Type 1': 'Normal',
         'Type 2': 'N/A',
         Japanese: 'ニャース'
     },
     {
         '#': 53,
-        Name: 'Persian',
+        name: 'Persian',
         'Type 1': 'Normal',
         'Type 2': 'N/A',
         Japanese: 'ペルシアン'
     },
     {
         '#': 54,
-        Name: 'Psyduck',
+        name: 'Psyduck',
         'Type 1': 'Water',
         'Type 2': 'N/A',
         Japanese: 'コダック'
     },
     {
         '#': 55,
-        Name: 'Golduck',
+        name: 'Golduck',
         'Type 1': 'Water',
         'Type 2': 'N/A',
         Japanese: 'ゴルダック'
     },
     {
         '#': 56,
-        Name: 'Mankey',
+        name: 'Mankey',
         'Type 1': 'Fighting',
         'Type 2': 'N/A',
         Japanese: 'マンキー'
     },
     {
         '#': 57,
-        Name: 'Primeape',
+        name: 'Primeape',
         'Type 1': 'Fighting',
         'Type 2': 'N/A',
         Japanese: 'オコリザル'
     },
     {
         '#': 58,
-        Name: 'Growlithe',
+        name: 'Growlithe',
         'Type 1': 'Fire',
         'Type 2': 'N/A',
         Japanese: 'ガーディ'
     },
     {
         '#': 59,
-        Name: 'Arcanine',
+        name: 'Arcanine',
         'Type 1': 'Fire',
         'Type 2': 'N/A',
         Japanese: 'ウインディ'
     },
     {
         '#': 60,
-        Name: 'Poliwag',
+        name: 'Poliwag',
         'Type 1': 'Water',
         'Type 2': 'N/A',
         Japanese: 'ニョロモ'
     },
     {
         '#': 61,
-        Name: 'Poliwhirl',
+        name: 'Poliwhirl',
         'Type 1': 'Water',
         'Type 2': 'N/A',
         Japanese: 'ニョロゾ'
     },
     {
         '#': 62,
-        Name: 'Poliwrath',
+        name: 'Poliwrath',
         'Type 1': 'Water',
         'Type 2': 'Fighting',
         Japanese: 'ニョロボ'
     },
     {
         '#': 63,
-        Name: 'Abra',
+        name: 'Abra',
         'Type 1': 'Psychic',
         'Type 2': 'N/A',
         Japanese: 'ケーシィ'
     },
     {
         '#': 64,
-        Name: 'Kadabra',
+        name: 'Kadabra',
         'Type 1': 'Psychic',
         'Type 2': 'N/A',
         Japanese: 'ユンゲラー'
     },
     {
         '#': 65,
-        Name: 'Alakazam',
+        name: 'Alakazam',
         'Type 1': 'Psychic',
         'Type 2': 'N/A',
         Japanese: 'フーディン'
     },
     {
         '#': 66,
-        Name: 'Machop',
+        name: 'Machop',
         'Type 1': 'Fighting',
         'Type 2': 'N/A',
         Japanese: 'ワンリキー'
     },
     {
         '#': 67,
-        Name: 'Machoke',
+        name: 'Machoke',
         'Type 1': 'Fighting',
         'Type 2': 'N/A',
         Japanese: 'ゴーリキー'
     },
     {
         '#': 68,
-        Name: 'Machamp',
+        name: 'Machamp',
         'Type 1': 'Fighting',
         'Type 2': 'N/A',
         Japanese: 'カイリキー'
     },
     {
         '#': 69,
-        Name: 'Bellsprout',
+        name: 'Bellsprout',
         'Type 1': 'Grass',
         'Type 2': 'Poison',
         Japanese: 'マダツボミ'
     },
     {
         '#': 70,
-        Name: 'Weepinbell',
+        name: 'Weepinbell',
         'Type 1': 'Grass',
         'Type 2': 'Poison',
         Japanese: 'ウツドン'
     },
     {
         '#': 71,
-        Name: 'Victreebel',
+        name: 'Victreebel',
         'Type 1': 'Grass',
         'Type 2': 'Poison',
         Japanese: 'ウツボット'
     },
     {
         '#': 72,
-        Name: 'Tentacool',
+        name: 'Tentacool',
         'Type 1': 'Water',
         'Type 2': 'Poison',
         Japanese: 'メノクラゲ'
     },
     {
         '#': 73,
-        Name: 'Tentacruel',
+        name: 'Tentacruel',
         'Type 1': 'Water',
         'Type 2': 'Poison',
         Japanese: 'ドククラゲ'
     },
     {
         '#': 74,
-        Name: 'Geodude',
+        name: 'Geodude',
         'Type 1': 'Rock',
         'Type 2': 'Ground',
         Japanese: 'イシツブテ'
     },
     {
         '#': 75,
-        Name: 'Graveler',
+        name: 'Graveler',
         'Type 1': 'Rock',
         'Type 2': 'Ground',
         Japanese: 'ゴローン'
     },
     {
         '#': 76,
-        Name: 'Golem',
+        name: 'Golem',
         'Type 1': 'Rock',
         'Type 2': 'Ground',
         Japanese: 'ゴローニャ'
     },
     {
         '#': 77,
-        Name: 'Ponyta',
+        name: 'Ponyta',
         'Type 1': 'Fire',
         'Type 2': 'N/A',
         Japanese: 'ポニータ'
     },
     {
         '#': 78,
-        Name: 'Rapidash',
+        name: 'Rapidash',
         'Type 1': 'Fire',
         'Type 2': 'N/A',
         Japanese: 'ギャロップ'
     },
     {
         '#': 79,
-        Name: 'Slowpoke',
+        name: 'Slowpoke',
         'Type 1': 'Water',
         'Type 2': 'Psychic',
         Japanese: 'ヤドン'
     },
     {
         '#': 80,
-        Name: 'Slowbro',
+        name: 'Slowbro',
         'Type 1': 'Water',
         'Type 2': 'Psychic',
         Japanese: 'ヤドラン'
     },
     {
         '#': 81,
-        Name: 'Magnemite',
+        name: 'Magnemite',
         'Type 1': 'Electric',
         'Type 2': 'Steel[5]',
         Japanese: 'コイル'
     },
     {
         '#': 82,
-        Name: 'Magneton',
+        name: 'Magneton',
         'Type 1': 'Electric',
         'Type 2': 'Steel[6]',
         Japanese: 'レアコイル'
     },
     {
         '#': 83,
-        Name: "Farfetch'd",
+        name: "Farfetch'd",
         'Type 1': 'Normal',
         'Type 2': 'Flying',
         Japanese: 'カモネギ'
     },
     {
         '#': 84,
-        Name: 'Doduo',
+        name: 'Doduo',
         'Type 1': 'Normal',
         'Type 2': 'Flying',
         Japanese: 'ドードー'
     },
     {
         '#': 85,
-        Name: 'Dodrio',
+        name: 'Dodrio',
         'Type 1': 'Normal',
         'Type 2': 'Flying',
         Japanese: 'ドードリオ'
     },
     {
         '#': 86,
-        Name: 'Seel',
+        name: 'Seel',
         'Type 1': 'Water',
         'Type 2': 'N/A',
         Japanese: 'パウワウ'
     },
     {
         '#': 87,
-        Name: 'Dewgong',
+        name: 'Dewgong',
         'Type 1': 'Water',
         'Type 2': 'Ice',
         Japanese: 'ジュゴン'
     },
     {
         '#': 88,
-        Name: 'Grimer',
+        name: 'Grimer',
         'Type 1': 'Poison',
         'Type 2': 'N/A',
         Japanese: 'ベトベター'
     },
     {
         '#': 89,
-        Name: 'Muk',
+        name: 'Muk',
         'Type 1': 'Poison',
         'Type 2': 'N/A',
         Japanese: 'ベトベトン'
     },
     {
         '#': 90,
-        Name: 'Shellder',
+        name: 'Shellder',
         'Type 1': 'Water',
         'Type 2': 'N/A',
         Japanese: 'シェルダー'
     },
     {
         '#': 91,
-        Name: 'Cloyster',
+        name: 'Cloyster',
         'Type 1': 'Water',
         'Type 2': 'Ice',
         Japanese: 'パルシェン'
     },
     {
         '#': 92,
-        Name: 'Gastly',
+        name: 'Gastly',
         'Type 1': 'Ghost',
         'Type 2': 'Poison',
         Japanese: 'ゴース'
     },
     {
         '#': 93,
-        Name: 'Haunter',
+        name: 'Haunter',
         'Type 1': 'Ghost',
         'Type 2': 'Poison',
         Japanese: 'ゴースト'
     },
     {
         '#': 94,
-        Name: 'Gengar',
+        name: 'Gengar',
         'Type 1': 'Ghost',
         'Type 2': 'Poison',
         Japanese: 'ゲンガー'
     },
     {
         '#': 95,
-        Name: 'Onix',
+        name: 'Onix',
         'Type 1': 'Rock',
         'Type 2': 'Ground',
         Japanese: 'イワーク'
     },
     {
         '#': 96,
-        Name: 'Drowzee',
+        name: 'Drowzee',
         'Type 1': 'Psychic',
         'Type 2': 'N/A',
         Japanese: 'スリープ'
     },
     {
         '#': 97,
-        Name: 'Hypno',
+        name: 'Hypno',
         'Type 1': 'Psychic',
         'Type 2': 'N/A',
         Japanese: 'スリーパー'
     },
     {
         '#': 98,
-        Name: 'Krabby',
+        name: 'Krabby',
         'Type 1': 'Water',
         'Type 2': 'N/A',
         Japanese: 'クラブ'
     },
     {
         '#': 99,
-        Name: 'Kingler',
+        name: 'Kingler',
         'Type 1': 'Water',
         'Type 2': 'N/A',
         Japanese: 'キングラー'
     },
     {
         '#': 100,
-        Name: 'Voltorb',
+        name: 'Voltorb',
         'Type 1': 'Electric',
         'Type 2': 'N/A',
         Japanese: 'ビリリダマ'
     },
     {
         '#': 100,
-        Name: 'Voltorb',
+        name: 'Voltorb',
         'Type 1': 'Electric',
         'Type 2': 'N/A',
         Japanese: 'ビリリダマ'
     },
     {
         '#': 101,
-        Name: 'Electrode',
+        name: 'Electrode',
         'Type 1': 'Electric',
         'Type 2': 'N/A',
         Japanese: 'マルマイン'
     },
     {
         '#': 102,
-        Name: 'Exeggcute',
+        name: 'Exeggcute',
         'Type 1': 'Grass',
         'Type 2': 'Psychic',
         Japanese: 'タマタマ'
     },
     {
         '#': 103,
-        Name: 'Exeggutor',
+        name: 'Exeggutor',
         'Type 1': 'Grass',
         'Type 2': 'Psychic',
         Japanese: 'ナッシー'
     },
     {
         '#': 104,
-        Name: 'Cubone',
+        name: 'Cubone',
         'Type 1': 'Ground',
         'Type 2': 'N/A',
         Japanese: 'カラカラ'
     },
     {
         '#': 105,
-        Name: 'Marowak',
+        name: 'Marowak',
         'Type 1': 'Ground',
         'Type 2': 'N/A',
         Japanese: 'ガラガラ'
     },
     {
         '#': 106,
-        Name: 'Hitmonlee',
+        name: 'Hitmonlee',
         'Type 1': 'Fighting',
         'Type 2': 'N/A',
         Japanese: 'サワムラー'
     },
     {
         '#': 107,
-        Name: 'Hitmonchan',
+        name: 'Hitmonchan',
         'Type 1': 'Fighting',
         'Type 2': 'N/A',
         Japanese: 'エビワラー'
     },
     {
         '#': 108,
-        Name: 'Lickitung',
+        name: 'Lickitung',
         'Type 1': 'Normal',
         'Type 2': 'N/A',
         Japanese: 'ベロリンガ'
     },
     {
         '#': 109,
-        Name: 'Koffing',
+        name: 'Koffing',
         'Type 1': 'Poison',
         'Type 2': 'N/A',
         Japanese: 'ドガース'
     },
     {
         '#': 110,
-        Name: 'Weezing',
+        name: 'Weezing',
         'Type 1': 'Poison',
         'Type 2': 'N/A',
         Japanese: 'マタドガス'
     },
     {
         '#': 111,
-        Name: 'Rhyhorn',
+        name: 'Rhyhorn',
         'Type 1': 'Ground',
         'Type 2': 'Rock',
         Japanese: 'サイホーン'
     },
     {
         '#': 112,
-        Name: 'Rhydon',
+        name: 'Rhydon',
         'Type 1': 'Ground',
         'Type 2': 'Rock',
         Japanese: 'サイドン'
     },
     {
         '#': 113,
-        Name: 'Chansey',
+        name: 'Chansey',
         'Type 1': 'Normal',
         'Type 2': 'N/A',
         Japanese: 'ラッキー'
     },
     {
         '#': 114,
-        Name: 'Tangela',
+        name: 'Tangela',
         'Type 1': 'Grass',
         'Type 2': 'N/A',
         Japanese: 'モンジャラ'
     },
     {
         '#': 115,
-        Name: 'Kangaskhan',
+        name: 'Kangaskhan',
         'Type 1': 'Normal',
         'Type 2': 'N/A',
         Japanese: 'ガルーラ'
     },
     {
         '#': 116,
-        Name: 'Horsea',
+        name: 'Horsea',
         'Type 1': 'Water',
         'Type 2': 'N/A',
         Japanese: 'タッツー'
     },
     {
         '#': 117,
-        Name: 'Seadra',
+        name: 'Seadra',
         'Type 1': 'Water',
         'Type 2': 'N/A',
         Japanese: 'シードラ'
     },
     {
         '#': 118,
-        Name: 'Goldeen',
+        name: 'Goldeen',
         'Type 1': 'Water',
         'Type 2': 'N/A',
         Japanese: 'トサキント'
     },
     {
         '#': 119,
-        Name: 'Seaking',
+        name: 'Seaking',
         'Type 1': 'Water',
         'Type 2': 'N/A',
         Japanese: 'アズマオウ'
     },
     {
         '#': 120,
-        Name: 'Staryu',
+        name: 'Staryu',
         'Type 1': 'Water',
         'Type 2': 'N/A',
         Japanese: 'ヒトデマン'
     },
     {
         '#': 121,
-        Name: 'Starmie',
+        name: 'Starmie',
         'Type 1': 'Water',
         'Type 2': 'Psychic',
         Japanese: 'スターミー'
     },
     {
         '#': 122,
-        Name: 'Mr. Mime',
+        name: 'Mr. Mime',
         'Type 1': 'Psychic',
         'Type 2': 'Fairy[7]',
         Japanese: 'バリヤード'
     },
     {
         '#': 123,
-        Name: 'Scyther',
+        name: 'Scyther',
         'Type 1': 'Bug',
         'Type 2': 'Flying',
         Japanese: 'ストライク'
     },
     {
         '#': 124,
-        Name: 'Jynx',
+        name: 'Jynx',
         'Type 1': 'Ice',
         'Type 2': 'Psychic',
         Japanese: 'ルージュラ'
     },
     {
         '#': 125,
-        Name: 'Electabuzz',
+        name: 'Electabuzz',
         'Type 1': 'Electric',
         'Type 2': 'N/A',
         Japanese: 'エレブー'
     },
     {
         '#': 126,
-        Name: 'Magmar',
+        name: 'Magmar',
         'Type 1': 'Fire',
         'Type 2': 'N/A',
         Japanese: 'ブーバー'
     },
     {
         '#': 127,
-        Name: 'Pinsir',
+        name: 'Pinsir',
         'Type 1': 'Bug',
         'Type 2': 'N/A',
         Japanese: 'カイロス'
     },
     {
         '#': 128,
-        Name: 'Tauros',
+        name: 'Tauros',
         'Type 1': 'Normal',
         'Type 2': 'N/A',
         Japanese: 'ケンタロス'
     },
     {
         '#': 129,
-        Name: 'Magikarp',
+        name: 'Magikarp',
         'Type 1': 'Water',
         'Type 2': 'N/A',
         Japanese: 'コイキング'
     },
     {
         '#': 130,
-        Name: 'Gyarados',
+        name: 'Gyarados',
         'Type 1': 'Water',
         'Type 2': 'Flying',
         Japanese: 'ギャラドス'
     },
     {
         '#': 131,
-        Name: 'Lapras',
+        name: 'Lapras',
         'Type 1': 'Water',
         'Type 2': 'Ice',
         Japanese: 'ラプラス'
     },
     {
         '#': 132,
-        Name: 'Ditto',
+        name: 'Ditto',
         'Type 1': 'Normal',
         'Type 2': 'N/A',
         Japanese: 'メタモン'
     },
     {
         '#': 133,
-        Name: 'Eevee',
+        name: 'Eevee',
         'Type 1': 'Normal',
         'Type 2': 'N/A',
         Japanese: 'イーブイ'
     },
     {
         '#': 134,
-        Name: 'Vaporeon',
+        name: 'Vaporeon',
         'Type 1': 'Water',
         'Type 2': 'N/A',
         Japanese: 'シャワーズ'
     },
     {
         '#': 135,
-        Name: 'Jolteon',
+        name: 'Jolteon',
         'Type 1': 'Electric',
         'Type 2': 'N/A',
         Japanese: 'サンダース'
     },
     {
         '#': 136,
-        Name: 'Flareon',
+        name: 'Flareon',
         'Type 1': 'Fire',
         'Type 2': 'N/A',
         Japanese: 'ブースター'
     },
     {
         '#': 137,
-        Name: 'Porygon',
+        name: 'Porygon',
         'Type 1': 'Normal',
         'Type 2': 'N/A',
         Japanese: 'ポリゴン'
     },
     {
         '#': 138,
-        Name: 'Omanyte',
+        name: 'Omanyte',
         'Type 1': 'Rock',
         'Type 2': 'Water',
         Japanese: 'オムナイト'
     },
     {
         '#': 139,
-        Name: 'Omastar',
+        name: 'Omastar',
         'Type 1': 'Rock',
         'Type 2': 'Water',
         Japanese: 'オムスター'
     },
     {
         '#': 140,
-        Name: 'Kabuto',
+        name: 'Kabuto',
         'Type 1': 'Rock',
         'Type 2': 'Water',
         Japanese: 'カブト'
     },
     {
         '#': 141,
-        Name: 'Kabutops',
+        name: 'Kabutops',
         'Type 1': 'Rock',
         'Type 2': 'Water',
         Japanese: 'カブトプス'
     },
     {
         '#': 142,
-        Name: 'Aerodactyl',
+        name: 'Aerodactyl',
         'Type 1': 'Rock',
         'Type 2': 'Flying',
         Japanese: 'プテラ'
     },
     {
         '#': 143,
-        Name: 'Snorlax',
+        name: 'Snorlax',
         'Type 1': 'Normal',
         'Type 2': 'N/A',
         Japanese: 'カビゴン'
     },
     {
         '#': 144,
-        Name: 'Articuno',
+        name: 'Articuno',
         'Type 1': 'Ice',
         'Type 2': 'Flying',
         Japanese: 'フリーザー'
     },
     {
         '#': 145,
-        Name: 'Zapdos',
+        name: 'Zapdos',
         'Type 1': 'Electric',
         'Type 2': 'Flying',
         Japanese: 'サンダー'
     },
     {
         '#': 146,
-        Name: 'Moltres',
+        name: 'Moltres',
         'Type 1': 'Fire',
         'Type 2': 'Flying',
         Japanese: 'ファイヤー'
     },
     {
         '#': 147,
-        Name: 'Dratini',
+        name: 'Dratini',
         'Type 1': 'Dragon',
         'Type 2': 'N/A',
         Japanese: 'ミニリュウ'
     },
     {
         '#': 148,
-        Name: 'Dragonair',
+        name: 'Dragonair',
         'Type 1': 'Dragon',
         'Type 2': 'N/A',
         Japanese: 'ハクリュー'
     },
     {
         '#': 149,
-        Name: 'Dragonite',
+        name: 'Dragonite',
         'Type 1': 'Dragon',
         'Type 2': 'Flying',
         Japanese: 'カイリュー'
     },
     {
         '#': 150,
-        Name: 'Mewtwo',
+        name: 'Mewtwo',
         'Type 1': 'Psychic',
         'Type 2': 'N/A',
         Japanese: 'ミュウツー'
     },
     {
         '#': 151,
-        Name: 'Mew',
+        name: 'Mew',
         'Type 1': 'Psychic',
         'Type 2': 'N/A',
         Japanese: 'ミュウ'
