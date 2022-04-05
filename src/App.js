@@ -7,9 +7,11 @@ const App = () => {
   let words = [...POKEMON];
   // console.log(words)
 
+  let w = words[Math.floor(Math.random() * words.length)];
+
   //State Hooks
   let [tries, setTries] = useState(10);
-  let [pokemonWord, setPokemonWord] = useState();
+  let [pokemonWord, setPokemonWord] = useState(w);
   let [blanks, setBlanks] = useState("");
   let [used, setUsed] = useState([]);
 
@@ -29,12 +31,7 @@ const App = () => {
   };
 
   const gameStart = () => {
-    randomizer();
-    console.log('wait')
-    console.log('wait.')
-    console.log('wait..')
-    console.log('wait...')
-
+    // randomizer();
     createBlanks();
   }
 
@@ -42,7 +39,7 @@ const App = () => {
   useEffect(() => {
     gameStart();
     console.log(pokemonWord, "")
-  });
+  },[]);
 
   return (
     <Container>
