@@ -35,11 +35,15 @@ const App = () => {
     createBlanks();
   }
 
+  document.addEventListener('keyup', e => {
+    console.log(e.key)
+  });
+
 
   useEffect(() => {
     gameStart();
     console.log(pokemonWord, "")
-  },[]);
+  }, []);
 
   return (
     <Container>
