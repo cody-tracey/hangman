@@ -8,12 +8,15 @@ const App = () => {
   // console.log(words)
 
   let w = words[Math.floor(Math.random() * words.length)];
+  let n = w.name;
 
   //State Hooks
   let [tries, setTries] = useState(10);
-  let [pokemonWord, setPokemonWord] = useState(w);
+  let [pokemonFacts,setPokemonFacts] = useState(w)
+  let [pokemonWord, setPokemonWord] = useState(n);
   let [blanks, setBlanks] = useState("");
   let [used, setUsed] = useState([]);
+ 
 
   const randomizer = () => {
     let w = words[Math.floor(Math.random() * words.length)];
@@ -21,8 +24,7 @@ const App = () => {
   };
 
   const createBlanks = () => {
-    let name = pokemonWord.name.split('');
-    let holder = name.map(i => {
+     let holder = pokemonWord.split('').map(i => {
       if (i === ' ') return i
       else return '*';
     }).join('');
@@ -35,15 +37,22 @@ const App = () => {
     createBlanks();
   }
 
-  document.addEventListener('keyup', e => {
-    console.log(e.key)
-  });
+  const keyUpE = ({ key }) => {
+    if (!used.includes(key)) return setUsed(used => [...used, key])
+   
+  }
+
 
 
   useEffect(() => {
     gameStart();
     console.log(pokemonWord, "")
-  }, []);
+    window.addEventListener('keyup', keyUpE);
+    return () => {
+      window.removeEventListener('keyup', keyUpE)
+    }
+
+  }, [used]);
 
   return (
     <Container>
