@@ -5,7 +5,6 @@ import POKEMON from './assets/pokemon';
 
 const App = () => {
   let words = [...POKEMON];
-  // console.log(words)
 
   let w = words[Math.floor(Math.random() * words.length)];
   let n = w.name;
@@ -16,11 +15,14 @@ const App = () => {
   let [pokemonWord, setPokemonWord] = useState(n);
   let [blanks, setBlanks] = useState("");
   let [used, setUsed] = useState([]);
+  const [win,setWin] = useState(false);
  
 
   const randomizer = () => {
     let w = words[Math.floor(Math.random() * words.length)];
-    setPokemonWord(w);
+    let n = w.name;
+    setPokemonFacts(w)
+    setPokemonWord(n)
   };
 
   const createBlanks = () => {
@@ -33,32 +35,40 @@ const App = () => {
   };
 
   const gameStart = () => {
-    // randomizer();
+    randomizer();
     createBlanks();
+    setUsed([])
+    console.log('start')
   }
 
   const keyUpE = ({ key }) => {
     if (!used.includes(key)) return setUsed(used => [...used, key])
-   
+  }
+
+  const winner = () => {
+    setWin(true);
   }
 
 
+  useEffect(() => {
+    setWin(false);
+    gameStart();
+    console.log(pokemonWord,'test')    
+  }, [win]);
 
   useEffect(() => {
-    gameStart();
-    console.log(pokemonWord, "")
     window.addEventListener('keyup', keyUpE);
     return () => {
       window.removeEventListener('keyup', keyUpE)
     }
-
-  }, [used]);
+  },[used])
 
   return (
     <Container>
       <p>Tries left: {tries}</p>
       <p>{blanks}</p>
       <p>Already Guessed: {used}</p>
+      <button onClick={winner}>Click</button>
     </Container>
   );
 }

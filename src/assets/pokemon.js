@@ -575,7 +575,7 @@ const POKEMON = [
     },
     {
         '#': 83,
-        name: "Farfetch'd",
+        name: "Farfetchd",
         'Type 1': 'Normal',
         'Type 2': 'Flying',
         Japanese: 'カモネギ'
