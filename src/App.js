@@ -15,7 +15,7 @@ const App = () => {
   let [pokemonWord, setPokemonWord] = useState(n);
   let [blanks, setBlanks] = useState("");
   let [used, setUsed] = useState([]);
-  const [win,setWin] = useState(false);
+  const [results,setResults] = useState([]);
  
 
   const randomizer = () => {
@@ -28,7 +28,7 @@ const App = () => {
   const createBlanks = () => {
      let holder = pokemonWord.split('').map(i => {
       if (i === ' ') return i
-      else return '*';
+      else return '_ ';
     }).join('');
 
     setBlanks(holder);
@@ -38,23 +38,21 @@ const App = () => {
     randomizer();
     createBlanks();
     setUsed([])
-    console.log('start')
   }
 
   const keyUpE = ({ key }) => {
     if (!used.includes(key)) return setUsed(used => [...used, key])
   }
 
-  const winner = () => {
-    setWin(true);
+  const winner = (res) => {
+    setResults([...results,res]);
   }
 
 
   useEffect(() => {
-    setWin(false);
     gameStart();
     console.log(pokemonWord,'test')    
-  }, [win]);
+  }, [results]);
 
   useEffect(() => {
     window.addEventListener('keyup', keyUpE);
