@@ -11,22 +11,24 @@ const App = () => {
 
   //State Hooks
   let [tries, setTries] = useState(10);
-  let [pokemonFacts,setPokemonFacts] = useState(w)
+  let [pokemonFacts, setPokemonFacts] = useState(w)
   let [pokemonWord, setPokemonWord] = useState(n);
   let [blanks, setBlanks] = useState("");
   let [used, setUsed] = useState([]);
-  const [results,setResults] = useState([]);
- 
+  const [results, setResults] = useState([]);
+
+
+
 
   const randomizer = () => {
     let w = words[Math.floor(Math.random() * words.length)];
     let n = w.name;
-    setPokemonFacts(w)
-    setPokemonWord(n)
+    setPokemonFacts(w);
+    setPokemonWord(n);
   };
 
   const createBlanks = () => {
-     let holder = pokemonWord.split('').map(i => {
+    let holder = pokemonWord.split('').map(i => {
       if (i === ' ') return i
       else return '_ ';
     }).join('');
@@ -36,22 +38,22 @@ const App = () => {
 
   const gameStart = () => {
     randomizer();
-    createBlanks();
     setUsed([])
   }
 
   const keyUpE = ({ key }) => {
     if (!used.includes(key)) return setUsed(used => [...used, key])
+    console.log(key,pokemonWord)
+    if(pokemonWord.includes(key)) console.log("includes")
   }
 
   const winner = (res) => {
-    setResults([...results,res]);
+    setResults([...results, res]);
   }
 
 
   useEffect(() => {
     gameStart();
-    console.log(pokemonWord,'test')    
   }, [results]);
 
   useEffect(() => {
@@ -59,12 +61,18 @@ const App = () => {
     return () => {
       window.removeEventListener('keyup', keyUpE)
     }
-  },[used])
+  }, [used]);
+
+  useEffect(() => {
+    createBlanks();
+  }, [pokemonWord])
 
   return (
     <Container>
+
       <p>Tries left: {tries}</p>
       <p>{blanks}</p>
+      <p>{pokemonWord.split('').join(' ')}</p>
       <p>Already Guessed: {used}</p>
       <button onClick={winner}>Click</button>
     </Container>
